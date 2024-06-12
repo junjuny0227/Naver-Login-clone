@@ -8,8 +8,22 @@
     <title>네이버 : 로그인</title>
   </head>
   <body>
-    <a href="https://www.naver.com/" class="logo">
-      <h1>NAVER</h1>
-    </a>
+    <div class="wrapper">
+      <header class="logo">
+        <a href="https://www.naver.com/">NAVER</a>
+      </header>
+      <div class="border">
+        <div class="button-wrapper">
+          <input type="button" value="ID 로그인" />
+          <input type="button" value="일회용 번호" />
+          <input type="button" value="QR코드" />
+        </div>
+        <form class="login-form" action="app.js">
+          <input type="text" placeholder="아이디" />
+          <input type="password" placeholder="비밀번호" />
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
