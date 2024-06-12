@@ -1,7 +1,8 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, helvetica,
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica,
     "Apple SD Gothic Neo", sans-serif;
 }
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -9,43 +10,88 @@ body {
   justify-content: center;
   width: 100%;
 }
+
 .logo {
-  margin-top: 85px;
-  margin-bottom: 35px;
-  a {
-    text-decoration: none;
-    color: #03c75a;
-    font-size: 43px;
-    font-weight: 800;
-  }
+  margin: 85px 0 35px;
 }
+
+.logo a {
+  text-decoration: none;
+  color: #03c75a;
+  font-size: 43px;
+  font-weight: 800;
+}
+
 .border {
   border: 1px solid #c6c6c6;
+  border-top: none;
   border-radius: 10px;
 }
+
 .button-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
-  input {
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    width: 155px;
-    height: 50px;
-  }
 }
+
+.button-wrapper input {
+  background-color: white;
+  border: none;
+  /* border-radius: 10px; */
+  font-size: 16px;
+  width: 155px;
+  height: 50px;
+}
+
 .login-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  input {
-    border: none;
-    border: 1px solid #dadada;
-    border-radius: 10px;
-    width: 420px;
-    height: 50px;
-  }
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
+.login-form input {
+  border: 1px solid #dadada;
+  width: 420px;
+  height: 45px;
+}
+
+.login-form input::placeholder {
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+#typeid {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#typepw {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#bt1 {
+  border-right: 1px solid #c6c6c6;
+  border-top: 1px solid #c6c6c6;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#bt2,
+#bt3 {
+  background-color: #f8f9fa;
+  color: #777777;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+#bt2 {
+  border-top-right-radius: 0;
+}
+
+#bt3 {
+  border-left: 1px solid #e3e3e3;
+  border-top-right-radius: 10px;
 }
