@@ -33,13 +33,42 @@ body {
   align-items: center;
 }
 
-.button-wrapper input {
+.button-wrapper a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   border: none;
-  /* border-radius: 10px; */
+  text-decoration: none;
+  color: inherit;
   font-size: 16px;
   width: 155px;
   height: 50px;
+  box-sizing: border-box; /* Ensure padding and border are included in width/height */
+}
+
+#bt1 {
+  border-right: 1px solid #c6c6c6;
+  border-top: 1px solid #c6c6c6;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#bt2,
+#bt3 {
+  background-color: #f8f9fa;
+  color: #777777;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+#bt2 {
+  border-top-right-radius: 0;
+}
+
+#bt3 {
+  border-left: 1px solid #e3e3e3;
+  border-top-right-radius: 10px;
 }
 
 .login-form {
@@ -71,27 +100,10 @@ body {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-
-#bt1 {
-  border-right: 1px solid #c6c6c6;
-  border-top: 1px solid #c6c6c6;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-#bt2,
-#bt3 {
-  background-color: #f8f9fa;
-  color: #777777;
-  border-top: 1px solid #e3e3e3;
-  border-bottom: 1px solid #c6c6c6;
-}
-
-#bt2 {
-  border-top-right-radius: 0;
-}
-
-#bt3 {
-  border-left: 1px solid #e3e3e3;
-  border-top-right-radius: 10px;
+.toggle-wrapper {
+  display: flex;
+  input {
+    margin-left: 25px;
+    margin-top: 15px;
+  }
 }
