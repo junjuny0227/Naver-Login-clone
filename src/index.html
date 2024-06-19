@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,25 +13,25 @@
         <a href="https://www.naver.com/">NAVER</a>
       </header>
       <div class="border">
-        <div class="button-wrapper">
-          <a href="index.html" id="bt1"
-            ><img src="/img/login.png" alt="" />ID 로그인</a
-          >
-          <a href="number.html" id="bt2"
-            ><img src="/img/oneuse.png" alt="" />일회용 번호</a
-          >
-          <a href="qrcode.html" id="bt3"
-            ><img src="/img/qrcode.png" alt="" />QR코드</a
-          >
-        </div>
-        <form class="login-form" action="app.js">
+        <nav class="button-wrapper">
+          <a href="index.html" id="bt1">
+            <img src="/img/login.png" alt="ID 로그인" />ID 로그인
+          </a>
+          <a href="number.html" id="bt2">
+            <img src="/img/oneuse.png" alt="일회용 번호" />일회용 번호
+          </a>
+          <a href="qrcode.html" id="bt3">
+            <img src="/img/qrcode.png" alt="QR코드" />QR코드
+          </a>
+        </nav>
+        <form class="login-form">
           <input type="text" id="typeid" placeholder="아이디" />
           <input type="password" id="typepw" placeholder="비밀번호" />
           <div class="toggle-wrapper">
             <input type="checkbox" id="keep-login" />
-            <label for="login">로그인 상태 유지</label>
+            <label for="keep-login">로그인 상태 유지</label>
             <input type="checkbox" id="ip-check" />
-            <label for="ip" id="security-ip">IP보안</label>
+            <label for="ip-check" id="security-ip">IP보안</label>
           </div>
           <input type="submit" value="로그인" id="login-btn" />
         </form>

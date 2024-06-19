@@ -52,14 +52,15 @@ body {
   box-sizing: border-box;
 }
 
-#bt1 {
+#bt2 {
   border-right: 1px solid #c6c6c6;
   border-top: 1px solid #c6c6c6;
+  border-left: 1px solid #c6c6c6;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 
-#bt2,
+#bt1,
 #bt3 {
   background-color: #f8f9fa;
   color: #777777;
@@ -67,8 +68,8 @@ body {
   border-bottom: 1px solid #c6c6c6;
 }
 
-#bt2 {
-  border-top-right-radius: 0;
+#bt1 {
+  border-top-left-radius: 10px;
 }
 
 #bt3 {
@@ -83,6 +84,13 @@ body {
   justify-content: center;
   padding-top: 20px;
   border-radius: 10px;
+  p {
+    font-size: 15px;
+    text-align: center;
+  }
+  span {
+    color: #09aa5c;
+  }
 }
 
 .login-form input {
@@ -91,8 +99,21 @@ body {
   height: 45px;
 }
 
+#onenumber {
+  margin-top: 20px;
+  appearance: none;
+  height: 50px;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#onenumber ::placeholder {
+  color: #777777;
+}
+
 #login-btn {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 20px;
   background-color: #09aa5c;
   appearance: none;
