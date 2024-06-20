@@ -3,38 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="new.css" />
     <link rel="icon" href="/img/favicon.png" />
     <title>네이버 : 로그인</title>
   </head>
   <body>
     <div class="wrapper">
-      <header class="logo">
-        <a href="https://www.naver.com/">NAVER</a>
-      </header>
+      <a href="https://www.naver.com/" class="logo">NAVER</a>
       <div class="border">
-        <nav class="button-wrapper">
-          <a href="index.html" id="bt1">
-            <img src="/img/login.png" alt="ID 로그인" />ID 로그인
-          </a>
-          <a href="number.html" id="bt2">
-            <img src="/img/oneuse.png" alt="일회용 번호" />일회용 번호
-          </a>
-          <a href="qrcode.html" id="bt3">
-            <img src="/img/qrcode.png" alt="QR코드" />QR코드
-          </a>
-        </nav>
-        <form class="login-form">
-          <input type="text" id="typeid" placeholder="아이디" />
-          <input type="password" id="typepw" placeholder="비밀번호" />
-          <div class="toggle-wrapper">
-            <input type="checkbox" id="keep-login" />
-            <label for="keep-login">로그인 상태 유지</label>
-            <input type="checkbox" id="ip-check" />
-            <label for="ip-check" id="security-ip">IP보안</label>
+        <div class="button-wrapper">
+          <div>
+            <img src="/img/login.png" width="22px" />
+            <p>ID 로그인</p>
           </div>
-          <input type="submit" value="로그인" id="login-btn" />
-        </form>
+          <div>
+            <img src="/img/oneuse.png" width="22px" />
+            <p>일회용 번호</p>
+          </div>
+          <div>
+            <img src="/img/qrcode.png" width="22px" />
+            <p>QR코드</p>
+          </div>
+        </div>
+        <div class="login-form">
+          <div>
+            <img src="/img/person.png" width="21px" />
+            <input type="text" placeholder="아이디" />
+          </div>
+          <div>
+            <img src="/img/lock.png" width="21px" />
+            <input type="text" placeholder="비밀번호" />
+          </div>
+        </div>
       </div>
     </div>
   </body>

@@ -1,154 +1,100 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica,
     "Apple SD Gothic Neo", sans-serif;
+  margin: 0;
 }
 
 .wrapper {
+  width: 100%;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 100%;
+  align-items: center;
 }
 
 .logo {
-  margin: 85px 0 35px;
-}
-
-.logo a {
   text-decoration: none;
   color: #03c75a;
   font-size: 43px;
   font-weight: 800;
+  margin-bottom: 48px; /* 여기에 올바른 속성을 추가해야 합니다 (예: margin-bottom) */
+  display: inline-block;
+  line-height: 1;
 }
 
 .border {
+  /* width: 458px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid #c6c6c6;
-  border-top: none;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 .button-wrapper {
+  height: 61px;
+  width: 458px;
   display: flex;
-  align-items: center;
-}
-
-.button-wrapper img {
-  width: 21px;
-  margin-right: 8px;
-}
-
-.button-wrapper a {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: white;
-  border: none;
-  text-decoration: none;
-  color: inherit;
-  font-size: 16px;
-  width: 155px;
-  height: 50px;
-  box-sizing: border-box;
+  align-items: center;
+  flex-direction: row;
 }
 
-#bt1 {
-  border-right: 1px solid #c6c6c6;
-  border-top: 1px solid #c6c6c6;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+.button-wrapper div {
+  width: 153px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
 }
 
-#bt2,
-#bt3 {
-  background-color: #f8f9fa;
-  color: #777777;
-  border-top: 1px solid #e3e3e3;
-  border-bottom: 1px solid #c6c6c6;
-}
-
-#bt2 {
-  border-top-right-radius: 0;
-}
-
-#bt3 {
-  border-left: 1px solid #e3e3e3;
-  border-top-right-radius: 10px;
+.button-wrapper p {
+  margin: 0;
 }
 
 .login-form {
+  margin: 20px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
-  border-radius: 10px;
+}
+
+.login-form div {
+  box-sizing: border-box;
+  width: 410px;
+  padding: 14px 17px 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dadada;
+}
+
+.login-form div:nth-child(1) {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.login-form div:nth-child(2) {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 .login-form input {
-  border: 1px solid #dadada;
-  width: 420px;
-  height: 45px;
-}
-
-#login-btn {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  background-color: #09aa5c;
+  width: 350px;
+  padding-left: 6px;
   appearance: none;
-  height: 50px;
-  border: 1px solid #08914e;
-  border-radius: 5px;
-  font-size: 20px;
-  color: white;
-  font-weight: 900;
-}
-
-.login-form input::placeholder {
+  border: none;
+  outline: none;
   font-size: 16px;
-  padding-left: 15px;
 }
 
-#typeid {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.login-form div:focus-within {
+  border-color: #03c75a;
 }
 
-#typepw {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.toggle-wrapper {
-  display: flex;
-  flex-direction: row;
-}
-
-.toggle-wrapper input {
-  appearance: none;
-  width: 19px;
-  height: 19px;
-  margin-top: 12px;
-  border: 1px solid #999;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.toggle-wrapper input:checked {
-  background-color: #09aa5c;
-}
-
-.toggle-wrapper label {
-  margin-top: 12px;
-  margin-left: 3px;
-  font-size: 14px;
-  color: #777777;
-}
-
-#keep-login {
-  margin-left: 0;
-}
-
-#ip-check {
-  margin-left: 225px;
+.login-form input:focus-within {
+  border: none;
 }
