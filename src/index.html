@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="new.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="/img/favicon.png" />
     <title>네이버 : 로그인</title>
   </head>
@@ -26,16 +26,30 @@
           </div>
         </div>
         <div class="login-form">
-          <div>
+          <div class="idpw">
             <img src="/img/person.png" width="21px" />
             <input type="text" placeholder="아이디" />
           </div>
-          <div>
+          <div class="idpw">
             <img src="/img/lock.png" width="21px" />
             <input type="text" placeholder="비밀번호" />
+          </div>
+          <div class="keep">
+            <div class="keep-login">
+              <input type="checkbox" />
+              <p>로그인 상태 유지</p>
+            </div>
+            <div class="keep-ip">
+              <p>IP보안</p>
+              <input type="checkbox" />
+            </div>
+          </div>
+          <div class="login-btn">
+            <p>로그인</p>
           </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
