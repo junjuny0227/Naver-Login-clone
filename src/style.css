@@ -6,11 +6,45 @@ body {
 
 .wrapper {
   width: 100%;
-  height: 100vh; /* Corrected unit */
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.header {
+  width: 100%;
+  position: relative; /* 새로운 스타일 추가 */
+}
+
+.select-lang {
+  width: 94px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cccccc;
+  position: absolute; /* 새로운 스타일 추가 */
+  margin-top: 25px;
+  right: 400px;
+}
+
+.select-lang select {
+  display: inline-block;
+  width: 50px;
+  border: none;
+  border-radius: 0px; /* 둥근 모서리를 만들기 위한 반지름 */
+  font-size: 16px; /* 글꼴 크기 */
+  appearance: none;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #333;
+}
+
+.select-lang img {
+  padding-left: 10px;
 }
 
 .logo {
@@ -18,18 +52,18 @@ body {
   color: #03c75a;
   font-size: 43px;
   font-weight: 800;
-  margin-bottom: 48px; /* Adjust as needed */
+  margin-bottom: 48px;
+  margin-top: 108px;
   display: inline-block;
   line-height: 1;
 }
 
 .border {
-  width: 458px; /* Uncomment if necessary */
+  width: 458px;
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
-  border: 1px solid #c6c6c6;
-  border-radius: 6px;
 }
 
 .button-wrapper {
@@ -39,14 +73,40 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  border-left: 1px solid #c6c6c6;
+  border-right: 1px solid #e3e3e3;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 .button-wrapper div {
+  box-sizing: border-box;
   width: 153px;
+  height: 61px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 6px; /* Adjust as needed */
+}
+
+.button-wrapper div:nth-child(1) {
+  border-top: 1px solid #c6c6c6;
+  border-right: 1px solid #c6c6c6;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.button-wrapper div:nth-child(2) {
+}
+
+.button-wrapper div:nth-child(3) {
+  border-left: 1px solid #e3e3e3;
+  border-top-right-radius: 6px;
+}
+
+.button-wrapper div:not(:first-child) {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #c6c6c6;
 }
 
 .button-wrapper p {
@@ -54,7 +114,12 @@ body {
 }
 
 .login-form {
-  margin: 20px 24px;
+  box-sizing: border-box;
+  padding: 20px 24px;
+  border: 1px solid #c6c6c6;
+  border-top: none;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 .idpw {
@@ -79,7 +144,7 @@ body {
 }
 
 .idpw input {
-  flex: 1; /* Allow input to expand */
+  flex: auto;
   padding-left: 6px;
   appearance: none;
   border: none;
