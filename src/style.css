@@ -67,7 +67,7 @@ body {
 }
 
 .button-wrapper {
-  height: 61px;
+  height: 50px;
   width: 458px;
   display: flex;
   justify-content: center;
@@ -82,7 +82,7 @@ body {
 .button-wrapper div {
   box-sizing: border-box;
   width: 153px;
-  height: 61px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,22 +95,21 @@ body {
   border-top-right-radius: 6px;
 }
 
-.button-wrapper div:nth-child(2) {
-}
-
 .button-wrapper div:nth-child(3) {
   border-left: 1px solid #e3e3e3;
   border-top-right-radius: 6px;
+  color: #777777;
 }
 
 .button-wrapper div:not(:first-child) {
   background-color: #f8f9fa;
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #c6c6c6;
+  color: #777777;
 }
 
 .button-wrapper p {
-  margin: 0;
+  margin-left: 6px;
 }
 
 .login-form {
@@ -133,12 +132,12 @@ body {
   border: 1px solid #dadada;
 }
 
-.login-form div:nth-child(1) {
+.idpw:nth-child(1) {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
 
-.login-form div:nth-child(2) {
+.idpw:nth-child(2) {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
@@ -177,11 +176,15 @@ body {
   border: 1px solid #9fa5a7;
   border-radius: 50%;
   cursor: pointer;
+  background: url(/img/uncheck.png) no-repeat 0 0px / contain;
+  background-size: 16px 16px;
 }
 
 .keep-login input:checked {
   background-color: #09aa5c;
   border-color: #09aa5c;
+  background: url(/img/uncheck.png) no-repeat 0 0px / contain;
+  background-size: 16px 16px;
 }
 
 .keep-login p {
@@ -193,10 +196,38 @@ body {
 
 .keep-ip {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
 }
 
-.keep-ip input {
+.keep-ip p {
+  font-size: 14px;
+  color: #777777;
+  margin: 0;
+  padding-right: 5px;
+}
+
+.out-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 31.4px;
+  height: 16.4px;
+  background-color: #c3c8c9;
+  border: 1px solid #c3c8c9;
+  border-radius: 50px;
+}
+
+.in-box {
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin-left: 1.5px;
+}
+
+/* .keep-ip input {
   margin: 0;
   appearance: none;
   outline: none;
@@ -210,14 +241,7 @@ body {
 .keep-ip input:checked {
   background-color: #09aa5c;
   border-color: #09aa5c;
-}
-
-.keep-ip p {
-  font-size: 14px;
-  color: #777777;
-  margin: 0;
-  padding-right: 5px;
-}
+} */
 
 .login-btn {
   display: flex;
@@ -234,4 +258,71 @@ body {
   font-weight: 700;
   color: #ffffff;
   margin: 13px 0;
+}
+
+.find {
+  margin-top: 20px;
+}
+
+.find a {
+  text-decoration: none;
+  color: #888888;
+  font-size: 14px;
+  padding: 0 20px 0 14px;
+}
+
+.find a:not(:last-child) {
+  border-right: 1px solid #dadada;
+}
+
+.footer {
+  margin-top: 95px;
+}
+
+.first-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.first-line a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #888888;
+  padding: 0 8px 0 6px;
+}
+
+.first-line a:nth-child(2) {
+  font-weight: bold;
+}
+
+.first-line a:not(:last-child) {
+  border-right: 1px solid #dadada;
+}
+
+.second-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-line a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #03c75a;
+  font-weight: 900;
+}
+
+.second-line p {
+  margin: 0;
+  margin-left: 5px;
+  font-size: 12px;
+  color: #888888;
+}
+
+.second-line span {
+  color: #000000;
 }
