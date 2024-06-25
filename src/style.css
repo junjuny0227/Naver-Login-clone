@@ -67,7 +67,7 @@ body {
 }
 
 .button-wrapper {
-  height: 50px;
+  height: 54px;
   width: 458px;
   display: flex;
   justify-content: center;
@@ -82,7 +82,7 @@ body {
 .button-wrapper div {
   box-sizing: border-box;
   width: 153px;
-  height: 50px;
+  height: 54px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,8 +183,8 @@ body {
 .keep-login input:checked {
   background-color: #09aa5c;
   border-color: #09aa5c;
-  background: url(/img/uncheck.png) no-repeat 0 0px / contain;
-  background-size: 16px 16px;
+  /* background: url(/img/uncheck.png) no-repeat 0 0px / contain;
+  background-size: 16px 16px; */
 }
 
 .keep-login p {
