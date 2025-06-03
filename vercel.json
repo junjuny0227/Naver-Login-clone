@@ -1,5 +1,8 @@
 {
-  "cleanUrls": true,
-  "rewrites": [{ "source": "/", "destination": "/src/index.html" }],
-  "public": "src"
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/src/index.html"
+    }
+  ]
 }
